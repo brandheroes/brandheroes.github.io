@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>UserDetailConnection</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Currency">
+            <a href="currency.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Currency
+            </a>
+        </li>
+        <li  title="date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                date
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="PaginationAmount">
+            <a href="paginationamount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaginationAmount
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="CampaignAudienceTypeEnum">
+            <a href="campaignaudiencetypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceTypeEnum
+            </a>
+        </li>
+        <li  title="CampaignCommentSubject">
+            <a href="campaigncommentsubject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignCommentSubject
+            </a>
+        </li>
+        <li  title="CampaignContentSortOrder">
+            <a href="campaigncontentsortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentSortOrder
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentSortOrder">
+            <a href="campaigndraftcommentsortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentSortOrder
+            </a>
+        </li>
+        <li  title="CampaignDraftState">
+            <a href="campaigndraftstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftState
+            </a>
+        </li>
+        <li  title="CampaignLocationType">
+            <a href="campaignlocationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignLocationType
+            </a>
+        </li>
+        <li  title="CampaignObjectCategoryIcon">
+            <a href="campaignobjectcategoryicon.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectCategoryIcon
+            </a>
+        </li>
+        <li  title="CampaignOrderBy">
+            <a href="campaignorderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignOrderBy
+            </a>
+        </li>
+        <li  title="CampaignOrderByInput">
+            <a href="campaignorderbyinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignOrderByInput
+            </a>
+        </li>
+        <li  title="CampaignPublicState">
+            <a href="campaignpublicstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignPublicState
+            </a>
+        </li>
+        <li  title="CampaignSortOrder">
+            <a href="campaignsortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSortOrder
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueEnum">
+            <a href="campaignsubmissionproofissueenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueEnum
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofsOrderBy">
+            <a href="campaignsubmissionproofsorderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofsOrderBy
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusEnum">
+            <a href="campaignsubmissionproofstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusEnum
+            </a>
+        </li>
+        <li  title="CurrencyEnum">
+            <a href="currencyenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyEnum
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusEnum">
+            <a href="followercountrecordproofstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusEnum
+            </a>
+        </li>
+        <li  title="GenderEnums">
+            <a href="genderenums.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenderEnums
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusEnum">
+            <a href="influencerapplicationstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusEnum
+            </a>
+        </li>
+        <li  title="InfluencerStatus">
+            <a href="influencerstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerStatus
+            </a>
+        </li>
+        <li  title="MailChimpSubscriptionStatus">
+            <a href="mailchimpsubscriptionstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MailChimpSubscriptionStatus
+            </a>
+        </li>
+        <li  title="MimeType">
+            <a href="mimetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MimeType
+            </a>
+        </li>
+        <li  title="PostMediaType">
+            <a href="postmediatype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaType
+            </a>
+        </li>
+        <li  title="SocialMediaTypeEnum">
+            <a href="socialmediatypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SocialMediaTypeEnum
+            </a>
+        </li>
+        <li  title="SubmissionStatusEnum">
+            <a href="submissionstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SubmissionStatusEnum
+            </a>
+        </li>
+        <li  title="UserRole">
+            <a href="userrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRole
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="Comment">
+            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Comment
+            </a>
+        </li>
+        <li  title="Node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Node
+            </a>
+        </li>
+        <li  title="TimelineEvent">
+            <a href="timelineevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TimelineEvent
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="AggregateCampaign">
+            <a href="aggregatecampaign.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaign
+            </a>
+        </li>
+        <li  title="AggregateCampaignContent">
+            <a href="aggregatecampaigncontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignContent
+            </a>
+        </li>
+        <li  title="AggregateCampaignDraftComment">
+            <a href="aggregatecampaigndraftcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignDraftComment
+            </a>
+        </li>
+        <li  title="AggregateCampaignDraftMeta">
+            <a href="aggregatecampaigndraftmeta.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignDraftMeta
+            </a>
+        </li>
+        <li  title="AggregateCampaignSubmission">
+            <a href="aggregatecampaignsubmission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignSubmission
+            </a>
+        </li>
+        <li  title="AggregateCampaignSubmissionProof">
+            <a href="aggregatecampaignsubmissionproof.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignSubmissionProof
+            </a>
+        </li>
+        <li  title="AggregateCampaignSubmissionProofIssueRecord">
+            <a href="aggregatecampaignsubmissionproofissuerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignSubmissionProofIssueRecord
+            </a>
+        </li>
+        <li  title="AggregateCompany">
+            <a href="aggregatecompany.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCompany
+            </a>
+        </li>
+        <li  title="AggregateCompanyManagerInvite">
+            <a href="aggregatecompanymanagerinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCompanyManagerInvite
+            </a>
+        </li>
+        <li  title="AggregateInfluencerApplication">
+            <a href="aggregateinfluencerapplication.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateInfluencerApplication
+            </a>
+        </li>
+        <li  title="AggregateUser">
+            <a href="aggregateuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUser
+            </a>
+        </li>
+        <li  title="AggregateUserComment">
+            <a href="aggregateusercomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserComment
+            </a>
+        </li>
+        <li  title="AggregateUserDetail">
+            <a href="aggregateuserdetail.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserDetail
+            </a>
+        </li>
+        <li  title="AggregateUserNotification">
+            <a href="aggregateusernotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserNotification
+            </a>
+        </li>
+        <li  title="AggregateUserRight">
+            <a href="aggregateuserright.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserRight
+            </a>
+        </li>
+        <li  title="AuthPayload">
+            <a href="authpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthPayload
+            </a>
+        </li>
+        <li  title="BooleanBoundary">
+            <a href="booleanboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BooleanBoundary
+            </a>
+        </li>
+        <li  title="Campaign">
+            <a href="campaign.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Campaign
+            </a>
+        </li>
+        <li  title="CampaignAddress">
+            <a href="campaignaddress.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAddress
+            </a>
+        </li>
+        <li  title="CampaignAddressBoundary">
+            <a href="campaignaddressboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAddressBoundary
+            </a>
+        </li>
+        <li  title="CampaignAudience">
+            <a href="campaignaudience.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudience
+            </a>
+        </li>
+        <li  title="CampaignAudienceBoundary">
+            <a href="campaignaudienceboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceBoundary
+            </a>
+        </li>
+        <li  title="CampaignAudienceExpected">
+            <a href="campaignaudienceexpected.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceExpected
+            </a>
+        </li>
+        <li  title="CampaignAudienceNonNullListBoundary">
+            <a href="campaignaudiencenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignAudienceTypeEnumBoundary">
+            <a href="campaignaudiencetypeenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceTypeEnumBoundary
+            </a>
+        </li>
+        <li  title="CampaignBody">
+            <a href="campaignbody.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignBody
+            </a>
+        </li>
+        <li  title="CampaignBodyBoundary">
+            <a href="campaignbodyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignBodyBoundary
+            </a>
+        </li>
+        <li  title="CampaignBoundary">
+            <a href="campaignboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignBoundary
+            </a>
+        </li>
+        <li  title="CampaignCommentSubjectBoundary">
+            <a href="campaigncommentsubjectboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignCommentSubjectBoundary
+            </a>
+        </li>
+        <li  title="CampaignConnection">
+            <a href="campaignconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignConnection
+            </a>
+        </li>
+        <li  title="CampaignContent">
+            <a href="campaigncontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContent
+            </a>
+        </li>
+        <li  title="CampaignContentBoundary">
+            <a href="campaigncontentboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentBoundary
+            </a>
+        </li>
+        <li  title="CampaignContentConnection">
+            <a href="campaigncontentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentConnection
+            </a>
+        </li>
+        <li  title="CampaignContentEdge">
+            <a href="campaigncontentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentEdge
+            </a>
+        </li>
+        <li  title="CampaignDraft">
+            <a href="campaigndraft.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraft
+            </a>
+        </li>
+        <li  title="CampaignDraftBoundary">
+            <a href="campaigndraftboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftComment">
+            <a href="campaigndraftcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftComment
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentConnection">
+            <a href="campaigndraftcommentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentConnection
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentEdge">
+            <a href="campaigndraftcommentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentEdge
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentNonNullListBoundary">
+            <a href="campaigndraftcommentnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftMeta">
+            <a href="campaigndraftmeta.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMeta
+            </a>
+        </li>
+        <li  title="CampaignDraftMetaBoundary">
+            <a href="campaigndraftmetaboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMetaBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftMetaConnection">
+            <a href="campaigndraftmetaconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMetaConnection
+            </a>
+        </li>
+        <li  title="CampaignDraftMetaEdge">
+            <a href="campaigndraftmetaedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMetaEdge
+            </a>
+        </li>
+        <li  title="CampaignDraftNonNullListBoundary">
+            <a href="campaigndraftnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftStateBoundary">
+            <a href="campaigndraftstateboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftStateBoundary
+            </a>
+        </li>
+        <li  title="CampaignEdge">
+            <a href="campaignedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignEdge
+            </a>
+        </li>
+        <li  title="CampaignLocationTypeBoundary">
+            <a href="campaignlocationtypeboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignLocationTypeBoundary
+            </a>
+        </li>
+        <li  title="CampaignNonNullListBoundary">
+            <a href="campaignnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignObjectCategoryIconBoundary">
+            <a href="campaignobjectcategoryiconboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectCategoryIconBoundary
+            </a>
+        </li>
+        <li  title="CampaignObjective">
+            <a href="campaignobjective.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjective
+            </a>
+        </li>
+        <li  title="CampaignObjectiveCategory">
+            <a href="campaignobjectivecategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectiveCategory
+            </a>
+        </li>
+        <li  title="CampaignObjectiveCategoryBoundary">
+            <a href="campaignobjectivecategoryboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectiveCategoryBoundary
+            </a>
+        </li>
+        <li  title="CampaignObjectiveNonNullListBoundary">
+            <a href="campaignobjectivenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectiveNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignPublicStateBoundary">
+            <a href="campaignpublicstateboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignPublicStateBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmission">
+            <a href="campaignsubmission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmission
+            </a>
+        </li>
+        <li  title="CampaignSubmissionBoundary">
+            <a href="campaignsubmissionboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionConnection">
+            <a href="campaignsubmissionconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionConnection
+            </a>
+        </li>
+        <li  title="CampaignSubmissionEdge">
+            <a href="campaignsubmissionedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionEdge
+            </a>
+        </li>
+        <li  title="CampaignSubmissionNonNullListBoundary">
+            <a href="campaignsubmissionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionPayout">
+            <a href="campaignsubmissionpayout.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionPayout
+            </a>
+        </li>
+        <li  title="CampaignSubmissionPayoutBoundary">
+            <a href="campaignsubmissionpayoutboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionPayoutBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProof">
+            <a href="campaignsubmissionproof.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProof
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofBoundary">
+            <a href="campaignsubmissionproofboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofConnection">
+            <a href="campaignsubmissionproofconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofConnection
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofEdge">
+            <a href="campaignsubmissionproofedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofEdge
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecord">
+            <a href="campaignsubmissionproofissuerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecord
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecordBoundary">
+            <a href="campaignsubmissionproofissuerecordboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecordBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecordConnection">
+            <a href="campaignsubmissionproofissuerecordconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecordConnection
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecordEdge">
+            <a href="campaignsubmissionproofissuerecordedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecordEdge
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofNonNullListBoundary">
+            <a href="campaignsubmissionproofnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusChangeEvent">
+            <a href="campaignsubmissionproofstatuschangeevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusChangeEvent
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusChangeEventNonNullListBoundary">
+            <a href="campaignsubmissionproofstatuschangeeventnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusChangeEventNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusEnumBoundary">
+            <a href="campaignsubmissionproofstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionStatusChangeEvent">
+            <a href="campaignsubmissionstatuschangeevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionStatusChangeEvent
+            </a>
+        </li>
+        <li  title="CampaignSubmissionStatusChangeEventBoundary">
+            <a href="campaignsubmissionstatuschangeeventboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionStatusChangeEventBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionStatusChangeEventNonNullListBoundary">
+            <a href="campaignsubmissionstatuschangeeventnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionStatusChangeEventNonNullListBoundary
+            </a>
+        </li>
+        <li  title="Company">
+            <a href="company.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Company
+            </a>
+        </li>
+        <li  title="CompanyBoundary">
+            <a href="companyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyBoundary
+            </a>
+        </li>
+        <li  title="CompanyConnection">
+            <a href="companyconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyConnection
+            </a>
+        </li>
+        <li  title="CompanyEdge">
+            <a href="companyedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyEdge
+            </a>
+        </li>
+        <li  title="CompanyGroup">
+            <a href="companygroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyGroup
+            </a>
+        </li>
+        <li  title="CompanyGroupNonNullListBoundary">
+            <a href="companygroupnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyGroupNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CompanyManagerInvite">
+            <a href="companymanagerinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInvite
+            </a>
+        </li>
+        <li  title="CompanyManagerInviteConnection">
+            <a href="companymanagerinviteconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInviteConnection
+            </a>
+        </li>
+        <li  title="CompanyManagerInviteEdge">
+            <a href="companymanagerinviteedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInviteEdge
+            </a>
+        </li>
+        <li  title="CompanyManagerInviteNonNullListBoundary">
+            <a href="companymanagerinvitenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInviteNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CompanyNonNullListBoundary">
+            <a href="companynonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CompanyRepulsion">
+            <a href="companyrepulsion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyRepulsion
+            </a>
+        </li>
+        <li  title="CompanyRepulsionNonNullListBoundary">
+            <a href="companyrepulsionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyRepulsionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CurrencyBoundary">
+            <a href="currencyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyBoundary
+            </a>
+        </li>
+        <li  title="CurrencyEnumBoundary">
+            <a href="currencyenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyEnumBoundary
+            </a>
+        </li>
+        <li  title="dateBoundary">
+            <a href="dateboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                dateBoundary
+            </a>
+        </li>
+        <li  title="EmailVerification">
+            <a href="emailverification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmailVerification
+            </a>
+        </li>
+        <li  title="FloatBoundary">
+            <a href="floatboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FloatBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecord">
+            <a href="followercountrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecord
+            </a>
+        </li>
+        <li  title="FollowerCountRecordBoundary">
+            <a href="followercountrecordboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordNonNullListBoundary">
+            <a href="followercountrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProof">
+            <a href="followercountrecordproof.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProof
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofBoundary">
+            <a href="followercountrecordproofboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusChange">
+            <a href="followercountrecordproofstatuschange.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusChange
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusChangeNonNullListBoundary">
+            <a href="followercountrecordproofstatuschangenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusChangeNonNullListBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusEnumBoundary">
+            <a href="followercountrecordproofstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="GenderEnumsBoundary">
+            <a href="genderenumsboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenderEnumsBoundary
+            </a>
+        </li>
+        <li  title="GenderEnumsNonNullListBoundary">
+            <a href="genderenumsnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenderEnumsNonNullListBoundary
+            </a>
+        </li>
+        <li  title="Image">
+            <a href="image.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Image
+            </a>
+        </li>
+        <li  title="ImageBoundary">
+            <a href="imageboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageBoundary
+            </a>
+        </li>
+        <li  title="ImageNonNullListBoundary">
+            <a href="imagenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageNonNullListBoundary
+            </a>
+        </li>
+        <li  title="IncorrectAddressMeta">
+            <a href="incorrectaddressmeta.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IncorrectAddressMeta
+            </a>
+        </li>
+        <li  title="IncorrectAddressMetaBoundary">
+            <a href="incorrectaddressmetaboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IncorrectAddressMetaBoundary
+            </a>
+        </li>
+        <li  title="InfluencerApplication">
+            <a href="influencerapplication.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplication
+            </a>
+        </li>
+        <li  title="InfluencerApplicationBoundary">
+            <a href="influencerapplicationboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationBoundary
+            </a>
+        </li>
+        <li  title="InfluencerApplicationConnection">
+            <a href="influencerapplicationconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationConnection
+            </a>
+        </li>
+        <li  title="InfluencerApplicationEdge">
+            <a href="influencerapplicationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationEdge
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusEnumBoundary">
+            <a href="influencerapplicationstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusRecord">
+            <a href="influencerapplicationstatusrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusRecord
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusRecordNonNullListBoundary">
+            <a href="influencerapplicationstatusrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="InfluencerStatusBoundary">
+            <a href="influencerstatusboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerStatusBoundary
+            </a>
+        </li>
+        <li  title="IntBoundary">
+            <a href="intboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IntBoundary
+            </a>
+        </li>
+        <li  title="Interest">
+            <a href="interest.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Interest
+            </a>
+        </li>
+        <li  title="InterestNonNullListBoundary">
+            <a href="interestnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InterestNonNullListBoundary
+            </a>
+        </li>
+        <li  title="InterestRepulsion">
+            <a href="interestrepulsion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InterestRepulsion
+            </a>
+        </li>
+        <li  title="InterestRepulsionNonNullListBoundary">
+            <a href="interestrepulsionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InterestRepulsionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="KPIReport">
+            <a href="kpireport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReport
+            </a>
+        </li>
+        <li  title="KPIReportCampaignSubmission">
+            <a href="kpireportcampaignsubmission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportCampaignSubmission
+            </a>
+        </li>
+        <li  title="KPIReportCampaignSubmissionNonNullListBoundary">
+            <a href="kpireportcampaignsubmissionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportCampaignSubmissionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="KPIReportRecord">
+            <a href="kpireportrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportRecord
+            </a>
+        </li>
+        <li  title="KPIReportRecordNonNullListBoundary">
+            <a href="kpireportrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="MailChimpSubscriptionStatusBoundary">
+            <a href="mailchimpsubscriptionstatusboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MailChimpSubscriptionStatusBoundary
+            </a>
+        </li>
+        <li  title="MimeTypeBoundary">
+            <a href="mimetypeboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MimeTypeBoundary
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="PostMediaTypeBoundary">
+            <a href="postmediatypeboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeBoundary
+            </a>
+        </li>
+        <li  title="PostMediaTypeCost">
+            <a href="postmediatypecost.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeCost
+            </a>
+        </li>
+        <li  title="PostMediaTypeCostEstimatedPosts">
+            <a href="postmediatypecostestimatedposts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeCostEstimatedPosts
+            </a>
+        </li>
+        <li  title="PostMediaTypeNonNullListBoundary">
+            <a href="postmediatypenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeNonNullListBoundary
+            </a>
+        </li>
+        <li  title="PushNotificationDeliveryRecord">
+            <a href="pushnotificationdeliveryrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationDeliveryRecord
+            </a>
+        </li>
+        <li  title="PushNotificationDeliveryRecordNonNullListBoundary">
+            <a href="pushnotificationdeliveryrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationDeliveryRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="PushNotificationToken">
+            <a href="pushnotificationtoken.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationToken
+            </a>
+        </li>
+        <li  title="PushNotificationTokenBoundary">
+            <a href="pushnotificationtokenboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationTokenBoundary
+            </a>
+        </li>
+        <li  title="PushNotificationTokenNonNullListBoundary">
+            <a href="pushnotificationtokennonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationTokenNonNullListBoundary
+            </a>
+        </li>
+        <li  title="RefreshTokenPayload">
+            <a href="refreshtokenpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RefreshTokenPayload
+            </a>
+        </li>
+        <li  title="StringBoundary">
+            <a href="stringboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringBoundary
+            </a>
+        </li>
+        <li  title="StringListBoundary">
+            <a href="stringlistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringListBoundary
+            </a>
+        </li>
+        <li  title="StringNonNullListBoundary">
+            <a href="stringnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringNonNullListBoundary
+            </a>
+        </li>
+        <li  title="SubmissionStatusEnumBoundary">
+            <a href="submissionstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SubmissionStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="UserAddress">
+            <a href="useraddress.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAddress
+            </a>
+        </li>
+        <li  title="UserAddressBoundary">
+            <a href="useraddressboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAddressBoundary
+            </a>
+        </li>
+        <li  title="UserBoundary">
+            <a href="userboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserBoundary
+            </a>
+        </li>
+        <li  title="UserComment">
+            <a href="usercomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserComment
+            </a>
+        </li>
+        <li  title="UserCommentConnection">
+            <a href="usercommentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCommentConnection
+            </a>
+        </li>
+        <li  title="UserCommentEdge">
+            <a href="usercommentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCommentEdge
+            </a>
+        </li>
+        <li  title="UserCommentNonNullListBoundary">
+            <a href="usercommentnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCommentNonNullListBoundary
+            </a>
+        </li>
+        <li  title="UserConnection">
+            <a href="userconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserConnection
+            </a>
+        </li>
+        <li  title="UserDetail">
+            <a href="userdetail.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetail
+            </a>
+        </li>
+        <li  title="UserDetailBoundary">
+            <a href="userdetailboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetailBoundary
+            </a>
+        </li>
+        <li class="slds-is-active" title="UserDetailConnection">
+            <a href="userdetailconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetailConnection
+            </a>
+        </li>
+        <li  title="UserDetailEdge">
+            <a href="userdetailedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetailEdge
+            </a>
+        </li>
+        <li  title="UserEdge">
+            <a href="useredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserEdge
+            </a>
+        </li>
+        <li  title="UserFacebook">
+            <a href="userfacebook.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserFacebook
+            </a>
+        </li>
+        <li  title="UserFacebookBoundary">
+            <a href="userfacebookboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserFacebookBoundary
+            </a>
+        </li>
+        <li  title="UserInstagram">
+            <a href="userinstagram.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInstagram
+            </a>
+        </li>
+        <li  title="UserInstagramBoundary">
+            <a href="userinstagramboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInstagramBoundary
+            </a>
+        </li>
+        <li  title="UserNonNullListBoundary">
+            <a href="usernonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNonNullListBoundary
+            </a>
+        </li>
+        <li  title="UserNotification">
+            <a href="usernotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNotification
+            </a>
+        </li>
+        <li  title="UserNotificationConnection">
+            <a href="usernotificationconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNotificationConnection
+            </a>
+        </li>
+        <li  title="UserNotificationEdge">
+            <a href="usernotificationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNotificationEdge
+            </a>
+        </li>
+        <li  title="UserRight">
+            <a href="userright.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRight
+            </a>
+        </li>
+        <li  title="UserRightConnection">
+            <a href="userrightconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRightConnection
+            </a>
+        </li>
+        <li  title="UserRightEdge">
+            <a href="userrightedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRightEdge
+            </a>
+        </li>
+        <li  title="UserRightNonNullListBoundary">
+            <a href="userrightnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRightNonNullListBoundary
+            </a>
+        </li>
+        <li  title="UserRoleBoundary">
+            <a href="userroleboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRoleBoundary
+            </a>
+        </li>
+        <li  title="UserShopify">
+            <a href="usershopify.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserShopify
+            </a>
+        </li>
+        <li  title="UserShopifyBoundary">
+            <a href="usershopifyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserShopifyBoundary
+            </a>
+        </li>
+        <li  title="UserSmileio">
+            <a href="usersmileio.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSmileio
+            </a>
+        </li>
+        <li  title="UserSmileioBoundary">
+            <a href="usersmileioboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSmileioBoundary
+            </a>
+        </li>
+        <li  title="UserSnapchat">
+            <a href="usersnapchat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSnapchat
+            </a>
+        </li>
+        <li  title="UserSnapchatBoundary">
+            <a href="usersnapchatboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSnapchatBoundary
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="LocationInput">
+            <a href="locationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LocationInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">UserDetailConnection</h1>
+        <div class="slds-text-body--regular"><p>A paginated connection to an other type</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">UserDetailConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="userdetailedge.doc.html">UserDetailEdge</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Aggregates for the connection</span></span></li><li><span class="tab"><span class="meta">aggregate</span>: <a class="support type" href="aggregateuserdetail.doc.html">AggregateUserDetail</a>! </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - Queries">Query<em>Queries</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>

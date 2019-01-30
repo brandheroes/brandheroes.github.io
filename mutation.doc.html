@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>Mutation</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li class="slds-is-active" title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Currency">
+            <a href="currency.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Currency
+            </a>
+        </li>
+        <li  title="date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                date
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="PaginationAmount">
+            <a href="paginationamount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaginationAmount
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="CampaignAudienceTypeEnum">
+            <a href="campaignaudiencetypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceTypeEnum
+            </a>
+        </li>
+        <li  title="CampaignCommentSubject">
+            <a href="campaigncommentsubject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignCommentSubject
+            </a>
+        </li>
+        <li  title="CampaignContentSortOrder">
+            <a href="campaigncontentsortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentSortOrder
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentSortOrder">
+            <a href="campaigndraftcommentsortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentSortOrder
+            </a>
+        </li>
+        <li  title="CampaignDraftState">
+            <a href="campaigndraftstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftState
+            </a>
+        </li>
+        <li  title="CampaignLocationType">
+            <a href="campaignlocationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignLocationType
+            </a>
+        </li>
+        <li  title="CampaignObjectCategoryIcon">
+            <a href="campaignobjectcategoryicon.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectCategoryIcon
+            </a>
+        </li>
+        <li  title="CampaignOrderBy">
+            <a href="campaignorderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignOrderBy
+            </a>
+        </li>
+        <li  title="CampaignOrderByInput">
+            <a href="campaignorderbyinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignOrderByInput
+            </a>
+        </li>
+        <li  title="CampaignPublicState">
+            <a href="campaignpublicstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignPublicState
+            </a>
+        </li>
+        <li  title="CampaignSortOrder">
+            <a href="campaignsortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSortOrder
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueEnum">
+            <a href="campaignsubmissionproofissueenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueEnum
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofsOrderBy">
+            <a href="campaignsubmissionproofsorderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofsOrderBy
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusEnum">
+            <a href="campaignsubmissionproofstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusEnum
+            </a>
+        </li>
+        <li  title="CurrencyEnum">
+            <a href="currencyenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyEnum
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusEnum">
+            <a href="followercountrecordproofstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusEnum
+            </a>
+        </li>
+        <li  title="GenderEnums">
+            <a href="genderenums.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenderEnums
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusEnum">
+            <a href="influencerapplicationstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusEnum
+            </a>
+        </li>
+        <li  title="InfluencerStatus">
+            <a href="influencerstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerStatus
+            </a>
+        </li>
+        <li  title="MailChimpSubscriptionStatus">
+            <a href="mailchimpsubscriptionstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MailChimpSubscriptionStatus
+            </a>
+        </li>
+        <li  title="MimeType">
+            <a href="mimetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MimeType
+            </a>
+        </li>
+        <li  title="PostMediaType">
+            <a href="postmediatype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaType
+            </a>
+        </li>
+        <li  title="SocialMediaTypeEnum">
+            <a href="socialmediatypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SocialMediaTypeEnum
+            </a>
+        </li>
+        <li  title="SubmissionStatusEnum">
+            <a href="submissionstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SubmissionStatusEnum
+            </a>
+        </li>
+        <li  title="UserRole">
+            <a href="userrole.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRole
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="Comment">
+            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Comment
+            </a>
+        </li>
+        <li  title="Node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Node
+            </a>
+        </li>
+        <li  title="TimelineEvent">
+            <a href="timelineevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TimelineEvent
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="AggregateCampaign">
+            <a href="aggregatecampaign.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaign
+            </a>
+        </li>
+        <li  title="AggregateCampaignContent">
+            <a href="aggregatecampaigncontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignContent
+            </a>
+        </li>
+        <li  title="AggregateCampaignDraftComment">
+            <a href="aggregatecampaigndraftcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignDraftComment
+            </a>
+        </li>
+        <li  title="AggregateCampaignDraftMeta">
+            <a href="aggregatecampaigndraftmeta.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignDraftMeta
+            </a>
+        </li>
+        <li  title="AggregateCampaignSubmission">
+            <a href="aggregatecampaignsubmission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignSubmission
+            </a>
+        </li>
+        <li  title="AggregateCampaignSubmissionProof">
+            <a href="aggregatecampaignsubmissionproof.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignSubmissionProof
+            </a>
+        </li>
+        <li  title="AggregateCampaignSubmissionProofIssueRecord">
+            <a href="aggregatecampaignsubmissionproofissuerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCampaignSubmissionProofIssueRecord
+            </a>
+        </li>
+        <li  title="AggregateCompany">
+            <a href="aggregatecompany.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCompany
+            </a>
+        </li>
+        <li  title="AggregateCompanyManagerInvite">
+            <a href="aggregatecompanymanagerinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateCompanyManagerInvite
+            </a>
+        </li>
+        <li  title="AggregateInfluencerApplication">
+            <a href="aggregateinfluencerapplication.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateInfluencerApplication
+            </a>
+        </li>
+        <li  title="AggregateUser">
+            <a href="aggregateuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUser
+            </a>
+        </li>
+        <li  title="AggregateUserComment">
+            <a href="aggregateusercomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserComment
+            </a>
+        </li>
+        <li  title="AggregateUserDetail">
+            <a href="aggregateuserdetail.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserDetail
+            </a>
+        </li>
+        <li  title="AggregateUserNotification">
+            <a href="aggregateusernotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserNotification
+            </a>
+        </li>
+        <li  title="AggregateUserRight">
+            <a href="aggregateuserright.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregateUserRight
+            </a>
+        </li>
+        <li  title="AuthPayload">
+            <a href="authpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthPayload
+            </a>
+        </li>
+        <li  title="BooleanBoundary">
+            <a href="booleanboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BooleanBoundary
+            </a>
+        </li>
+        <li  title="Campaign">
+            <a href="campaign.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Campaign
+            </a>
+        </li>
+        <li  title="CampaignAddress">
+            <a href="campaignaddress.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAddress
+            </a>
+        </li>
+        <li  title="CampaignAddressBoundary">
+            <a href="campaignaddressboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAddressBoundary
+            </a>
+        </li>
+        <li  title="CampaignAudience">
+            <a href="campaignaudience.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudience
+            </a>
+        </li>
+        <li  title="CampaignAudienceBoundary">
+            <a href="campaignaudienceboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceBoundary
+            </a>
+        </li>
+        <li  title="CampaignAudienceExpected">
+            <a href="campaignaudienceexpected.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceExpected
+            </a>
+        </li>
+        <li  title="CampaignAudienceNonNullListBoundary">
+            <a href="campaignaudiencenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignAudienceTypeEnumBoundary">
+            <a href="campaignaudiencetypeenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignAudienceTypeEnumBoundary
+            </a>
+        </li>
+        <li  title="CampaignBody">
+            <a href="campaignbody.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignBody
+            </a>
+        </li>
+        <li  title="CampaignBodyBoundary">
+            <a href="campaignbodyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignBodyBoundary
+            </a>
+        </li>
+        <li  title="CampaignBoundary">
+            <a href="campaignboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignBoundary
+            </a>
+        </li>
+        <li  title="CampaignCommentSubjectBoundary">
+            <a href="campaigncommentsubjectboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignCommentSubjectBoundary
+            </a>
+        </li>
+        <li  title="CampaignConnection">
+            <a href="campaignconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignConnection
+            </a>
+        </li>
+        <li  title="CampaignContent">
+            <a href="campaigncontent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContent
+            </a>
+        </li>
+        <li  title="CampaignContentBoundary">
+            <a href="campaigncontentboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentBoundary
+            </a>
+        </li>
+        <li  title="CampaignContentConnection">
+            <a href="campaigncontentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentConnection
+            </a>
+        </li>
+        <li  title="CampaignContentEdge">
+            <a href="campaigncontentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignContentEdge
+            </a>
+        </li>
+        <li  title="CampaignDraft">
+            <a href="campaigndraft.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraft
+            </a>
+        </li>
+        <li  title="CampaignDraftBoundary">
+            <a href="campaigndraftboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftComment">
+            <a href="campaigndraftcomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftComment
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentConnection">
+            <a href="campaigndraftcommentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentConnection
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentEdge">
+            <a href="campaigndraftcommentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentEdge
+            </a>
+        </li>
+        <li  title="CampaignDraftCommentNonNullListBoundary">
+            <a href="campaigndraftcommentnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftCommentNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftMeta">
+            <a href="campaigndraftmeta.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMeta
+            </a>
+        </li>
+        <li  title="CampaignDraftMetaBoundary">
+            <a href="campaigndraftmetaboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMetaBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftMetaConnection">
+            <a href="campaigndraftmetaconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMetaConnection
+            </a>
+        </li>
+        <li  title="CampaignDraftMetaEdge">
+            <a href="campaigndraftmetaedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftMetaEdge
+            </a>
+        </li>
+        <li  title="CampaignDraftNonNullListBoundary">
+            <a href="campaigndraftnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignDraftStateBoundary">
+            <a href="campaigndraftstateboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignDraftStateBoundary
+            </a>
+        </li>
+        <li  title="CampaignEdge">
+            <a href="campaignedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignEdge
+            </a>
+        </li>
+        <li  title="CampaignLocationTypeBoundary">
+            <a href="campaignlocationtypeboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignLocationTypeBoundary
+            </a>
+        </li>
+        <li  title="CampaignNonNullListBoundary">
+            <a href="campaignnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignObjectCategoryIconBoundary">
+            <a href="campaignobjectcategoryiconboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectCategoryIconBoundary
+            </a>
+        </li>
+        <li  title="CampaignObjective">
+            <a href="campaignobjective.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjective
+            </a>
+        </li>
+        <li  title="CampaignObjectiveCategory">
+            <a href="campaignobjectivecategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectiveCategory
+            </a>
+        </li>
+        <li  title="CampaignObjectiveCategoryBoundary">
+            <a href="campaignobjectivecategoryboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectiveCategoryBoundary
+            </a>
+        </li>
+        <li  title="CampaignObjectiveNonNullListBoundary">
+            <a href="campaignobjectivenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignObjectiveNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignPublicStateBoundary">
+            <a href="campaignpublicstateboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignPublicStateBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmission">
+            <a href="campaignsubmission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmission
+            </a>
+        </li>
+        <li  title="CampaignSubmissionBoundary">
+            <a href="campaignsubmissionboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionConnection">
+            <a href="campaignsubmissionconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionConnection
+            </a>
+        </li>
+        <li  title="CampaignSubmissionEdge">
+            <a href="campaignsubmissionedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionEdge
+            </a>
+        </li>
+        <li  title="CampaignSubmissionNonNullListBoundary">
+            <a href="campaignsubmissionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionPayout">
+            <a href="campaignsubmissionpayout.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionPayout
+            </a>
+        </li>
+        <li  title="CampaignSubmissionPayoutBoundary">
+            <a href="campaignsubmissionpayoutboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionPayoutBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProof">
+            <a href="campaignsubmissionproof.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProof
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofBoundary">
+            <a href="campaignsubmissionproofboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofConnection">
+            <a href="campaignsubmissionproofconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofConnection
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofEdge">
+            <a href="campaignsubmissionproofedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofEdge
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecord">
+            <a href="campaignsubmissionproofissuerecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecord
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecordBoundary">
+            <a href="campaignsubmissionproofissuerecordboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecordBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecordConnection">
+            <a href="campaignsubmissionproofissuerecordconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecordConnection
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofIssueRecordEdge">
+            <a href="campaignsubmissionproofissuerecordedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofIssueRecordEdge
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofNonNullListBoundary">
+            <a href="campaignsubmissionproofnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusChangeEvent">
+            <a href="campaignsubmissionproofstatuschangeevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusChangeEvent
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusChangeEventNonNullListBoundary">
+            <a href="campaignsubmissionproofstatuschangeeventnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusChangeEventNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionProofStatusEnumBoundary">
+            <a href="campaignsubmissionproofstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionProofStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionStatusChangeEvent">
+            <a href="campaignsubmissionstatuschangeevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionStatusChangeEvent
+            </a>
+        </li>
+        <li  title="CampaignSubmissionStatusChangeEventBoundary">
+            <a href="campaignsubmissionstatuschangeeventboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionStatusChangeEventBoundary
+            </a>
+        </li>
+        <li  title="CampaignSubmissionStatusChangeEventNonNullListBoundary">
+            <a href="campaignsubmissionstatuschangeeventnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CampaignSubmissionStatusChangeEventNonNullListBoundary
+            </a>
+        </li>
+        <li  title="Company">
+            <a href="company.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Company
+            </a>
+        </li>
+        <li  title="CompanyBoundary">
+            <a href="companyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyBoundary
+            </a>
+        </li>
+        <li  title="CompanyConnection">
+            <a href="companyconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyConnection
+            </a>
+        </li>
+        <li  title="CompanyEdge">
+            <a href="companyedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyEdge
+            </a>
+        </li>
+        <li  title="CompanyGroup">
+            <a href="companygroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyGroup
+            </a>
+        </li>
+        <li  title="CompanyGroupNonNullListBoundary">
+            <a href="companygroupnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyGroupNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CompanyManagerInvite">
+            <a href="companymanagerinvite.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInvite
+            </a>
+        </li>
+        <li  title="CompanyManagerInviteConnection">
+            <a href="companymanagerinviteconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInviteConnection
+            </a>
+        </li>
+        <li  title="CompanyManagerInviteEdge">
+            <a href="companymanagerinviteedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInviteEdge
+            </a>
+        </li>
+        <li  title="CompanyManagerInviteNonNullListBoundary">
+            <a href="companymanagerinvitenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyManagerInviteNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CompanyNonNullListBoundary">
+            <a href="companynonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CompanyRepulsion">
+            <a href="companyrepulsion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyRepulsion
+            </a>
+        </li>
+        <li  title="CompanyRepulsionNonNullListBoundary">
+            <a href="companyrepulsionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CompanyRepulsionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="CurrencyBoundary">
+            <a href="currencyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyBoundary
+            </a>
+        </li>
+        <li  title="CurrencyEnumBoundary">
+            <a href="currencyenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyEnumBoundary
+            </a>
+        </li>
+        <li  title="dateBoundary">
+            <a href="dateboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                dateBoundary
+            </a>
+        </li>
+        <li  title="EmailVerification">
+            <a href="emailverification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EmailVerification
+            </a>
+        </li>
+        <li  title="FloatBoundary">
+            <a href="floatboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FloatBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecord">
+            <a href="followercountrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecord
+            </a>
+        </li>
+        <li  title="FollowerCountRecordBoundary">
+            <a href="followercountrecordboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordNonNullListBoundary">
+            <a href="followercountrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProof">
+            <a href="followercountrecordproof.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProof
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofBoundary">
+            <a href="followercountrecordproofboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusChange">
+            <a href="followercountrecordproofstatuschange.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusChange
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusChangeNonNullListBoundary">
+            <a href="followercountrecordproofstatuschangenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusChangeNonNullListBoundary
+            </a>
+        </li>
+        <li  title="FollowerCountRecordProofStatusEnumBoundary">
+            <a href="followercountrecordproofstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowerCountRecordProofStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="GenderEnumsBoundary">
+            <a href="genderenumsboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenderEnumsBoundary
+            </a>
+        </li>
+        <li  title="GenderEnumsNonNullListBoundary">
+            <a href="genderenumsnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GenderEnumsNonNullListBoundary
+            </a>
+        </li>
+        <li  title="Image">
+            <a href="image.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Image
+            </a>
+        </li>
+        <li  title="ImageBoundary">
+            <a href="imageboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageBoundary
+            </a>
+        </li>
+        <li  title="ImageNonNullListBoundary">
+            <a href="imagenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageNonNullListBoundary
+            </a>
+        </li>
+        <li  title="IncorrectAddressMeta">
+            <a href="incorrectaddressmeta.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IncorrectAddressMeta
+            </a>
+        </li>
+        <li  title="IncorrectAddressMetaBoundary">
+            <a href="incorrectaddressmetaboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IncorrectAddressMetaBoundary
+            </a>
+        </li>
+        <li  title="InfluencerApplication">
+            <a href="influencerapplication.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplication
+            </a>
+        </li>
+        <li  title="InfluencerApplicationBoundary">
+            <a href="influencerapplicationboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationBoundary
+            </a>
+        </li>
+        <li  title="InfluencerApplicationConnection">
+            <a href="influencerapplicationconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationConnection
+            </a>
+        </li>
+        <li  title="InfluencerApplicationEdge">
+            <a href="influencerapplicationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationEdge
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusEnumBoundary">
+            <a href="influencerapplicationstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusRecord">
+            <a href="influencerapplicationstatusrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusRecord
+            </a>
+        </li>
+        <li  title="InfluencerApplicationStatusRecordNonNullListBoundary">
+            <a href="influencerapplicationstatusrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerApplicationStatusRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="InfluencerStatusBoundary">
+            <a href="influencerstatusboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InfluencerStatusBoundary
+            </a>
+        </li>
+        <li  title="IntBoundary">
+            <a href="intboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                IntBoundary
+            </a>
+        </li>
+        <li  title="Interest">
+            <a href="interest.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Interest
+            </a>
+        </li>
+        <li  title="InterestNonNullListBoundary">
+            <a href="interestnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InterestNonNullListBoundary
+            </a>
+        </li>
+        <li  title="InterestRepulsion">
+            <a href="interestrepulsion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InterestRepulsion
+            </a>
+        </li>
+        <li  title="InterestRepulsionNonNullListBoundary">
+            <a href="interestrepulsionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InterestRepulsionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="KPIReport">
+            <a href="kpireport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReport
+            </a>
+        </li>
+        <li  title="KPIReportCampaignSubmission">
+            <a href="kpireportcampaignsubmission.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportCampaignSubmission
+            </a>
+        </li>
+        <li  title="KPIReportCampaignSubmissionNonNullListBoundary">
+            <a href="kpireportcampaignsubmissionnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportCampaignSubmissionNonNullListBoundary
+            </a>
+        </li>
+        <li  title="KPIReportRecord">
+            <a href="kpireportrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportRecord
+            </a>
+        </li>
+        <li  title="KPIReportRecordNonNullListBoundary">
+            <a href="kpireportrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KPIReportRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="MailChimpSubscriptionStatusBoundary">
+            <a href="mailchimpsubscriptionstatusboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MailChimpSubscriptionStatusBoundary
+            </a>
+        </li>
+        <li  title="MimeTypeBoundary">
+            <a href="mimetypeboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MimeTypeBoundary
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="PostMediaTypeBoundary">
+            <a href="postmediatypeboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeBoundary
+            </a>
+        </li>
+        <li  title="PostMediaTypeCost">
+            <a href="postmediatypecost.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeCost
+            </a>
+        </li>
+        <li  title="PostMediaTypeCostEstimatedPosts">
+            <a href="postmediatypecostestimatedposts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeCostEstimatedPosts
+            </a>
+        </li>
+        <li  title="PostMediaTypeNonNullListBoundary">
+            <a href="postmediatypenonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMediaTypeNonNullListBoundary
+            </a>
+        </li>
+        <li  title="PushNotificationDeliveryRecord">
+            <a href="pushnotificationdeliveryrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationDeliveryRecord
+            </a>
+        </li>
+        <li  title="PushNotificationDeliveryRecordNonNullListBoundary">
+            <a href="pushnotificationdeliveryrecordnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationDeliveryRecordNonNullListBoundary
+            </a>
+        </li>
+        <li  title="PushNotificationToken">
+            <a href="pushnotificationtoken.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationToken
+            </a>
+        </li>
+        <li  title="PushNotificationTokenBoundary">
+            <a href="pushnotificationtokenboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationTokenBoundary
+            </a>
+        </li>
+        <li  title="PushNotificationTokenNonNullListBoundary">
+            <a href="pushnotificationtokennonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PushNotificationTokenNonNullListBoundary
+            </a>
+        </li>
+        <li  title="RefreshTokenPayload">
+            <a href="refreshtokenpayload.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RefreshTokenPayload
+            </a>
+        </li>
+        <li  title="StringBoundary">
+            <a href="stringboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringBoundary
+            </a>
+        </li>
+        <li  title="StringListBoundary">
+            <a href="stringlistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringListBoundary
+            </a>
+        </li>
+        <li  title="StringNonNullListBoundary">
+            <a href="stringnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StringNonNullListBoundary
+            </a>
+        </li>
+        <li  title="SubmissionStatusEnumBoundary">
+            <a href="submissionstatusenumboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SubmissionStatusEnumBoundary
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="UserAddress">
+            <a href="useraddress.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAddress
+            </a>
+        </li>
+        <li  title="UserAddressBoundary">
+            <a href="useraddressboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserAddressBoundary
+            </a>
+        </li>
+        <li  title="UserBoundary">
+            <a href="userboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserBoundary
+            </a>
+        </li>
+        <li  title="UserComment">
+            <a href="usercomment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserComment
+            </a>
+        </li>
+        <li  title="UserCommentConnection">
+            <a href="usercommentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCommentConnection
+            </a>
+        </li>
+        <li  title="UserCommentEdge">
+            <a href="usercommentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCommentEdge
+            </a>
+        </li>
+        <li  title="UserCommentNonNullListBoundary">
+            <a href="usercommentnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserCommentNonNullListBoundary
+            </a>
+        </li>
+        <li  title="UserConnection">
+            <a href="userconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserConnection
+            </a>
+        </li>
+        <li  title="UserDetail">
+            <a href="userdetail.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetail
+            </a>
+        </li>
+        <li  title="UserDetailBoundary">
+            <a href="userdetailboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetailBoundary
+            </a>
+        </li>
+        <li  title="UserDetailConnection">
+            <a href="userdetailconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetailConnection
+            </a>
+        </li>
+        <li  title="UserDetailEdge">
+            <a href="userdetailedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserDetailEdge
+            </a>
+        </li>
+        <li  title="UserEdge">
+            <a href="useredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserEdge
+            </a>
+        </li>
+        <li  title="UserFacebook">
+            <a href="userfacebook.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserFacebook
+            </a>
+        </li>
+        <li  title="UserFacebookBoundary">
+            <a href="userfacebookboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserFacebookBoundary
+            </a>
+        </li>
+        <li  title="UserInstagram">
+            <a href="userinstagram.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInstagram
+            </a>
+        </li>
+        <li  title="UserInstagramBoundary">
+            <a href="userinstagramboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInstagramBoundary
+            </a>
+        </li>
+        <li  title="UserNonNullListBoundary">
+            <a href="usernonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNonNullListBoundary
+            </a>
+        </li>
+        <li  title="UserNotification">
+            <a href="usernotification.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNotification
+            </a>
+        </li>
+        <li  title="UserNotificationConnection">
+            <a href="usernotificationconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNotificationConnection
+            </a>
+        </li>
+        <li  title="UserNotificationEdge">
+            <a href="usernotificationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserNotificationEdge
+            </a>
+        </li>
+        <li  title="UserRight">
+            <a href="userright.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRight
+            </a>
+        </li>
+        <li  title="UserRightConnection">
+            <a href="userrightconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRightConnection
+            </a>
+        </li>
+        <li  title="UserRightEdge">
+            <a href="userrightedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRightEdge
+            </a>
+        </li>
+        <li  title="UserRightNonNullListBoundary">
+            <a href="userrightnonnulllistboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRightNonNullListBoundary
+            </a>
+        </li>
+        <li  title="UserRoleBoundary">
+            <a href="userroleboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserRoleBoundary
+            </a>
+        </li>
+        <li  title="UserShopify">
+            <a href="usershopify.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserShopify
+            </a>
+        </li>
+        <li  title="UserShopifyBoundary">
+            <a href="usershopifyboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserShopifyBoundary
+            </a>
+        </li>
+        <li  title="UserSmileio">
+            <a href="usersmileio.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSmileio
+            </a>
+        </li>
+        <li  title="UserSmileioBoundary">
+            <a href="usersmileioboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSmileioBoundary
+            </a>
+        </li>
+        <li  title="UserSnapchat">
+            <a href="usersnapchat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSnapchat
+            </a>
+        </li>
+        <li  title="UserSnapchatBoundary">
+            <a href="usersnapchatboundary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserSnapchatBoundary
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="LocationInput">
+            <a href="locationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LocationInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">Mutation</h1>
+        <div class="slds-text-body--regular"><p>Mutations</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">type</span> <span class="identifier">Mutation</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Login a user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: The email of the user to login</span></span></li><li><span class="tab"><span class="comment line">#   <strong>password</strong>: The password of the user to login</span></span></li><li><span class="tab"><span class="meta">login</span>(<span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">password</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="authpayload.doc.html">AuthPayload</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Performs an authorization with a given password reset request key pair</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>key</strong>: The url parameter in the link given to the user by the </span></span></li><li><span class="tab"><span class="comment line">#   password reset request</span></span></li><li><span class="tab"><span class="comment line">#   <strong>password</strong>: The desired new password</span></span></li><li><span class="tab"><span class="meta">performPasswordReset</span>(<span class="meta">key</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">password</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="authpayload.doc.html">AuthPayload</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Requests a password reset for a given email</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: The email of the user to request a new password for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>operatingSystem</strong>: The operating system the action is performed </span></span></li><li><span class="tab"><span class="comment line">#   on</span></span></li><li><span class="tab"><span class="comment line">#   <strong>browser</strong>: The browser the action is performed on</span></span></li><li><span class="tab"><span class="comment line">#   <strong>returnAddress</strong>: The web address to return to</span></span></li><li><span class="tab"><span class="meta">requestPasswordReset</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">operatingSystem</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">browser</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">returnAddress</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Signup a user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: The email of the user to signup</span></span></li><li><span class="tab"><span class="comment line">#   <strong>password</strong>: The password of the user to signup</span></span></li><li><span class="tab"><span class="comment line">#   <strong>returnAddress</strong>: The address that should be linked to in the </span></span></li><li><span class="tab"><span class="comment line">#   confirmation mail</span></span></li><li><span class="tab"><span class="meta">signup</span>(<span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">password</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">returnAddress</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="authpayload.doc.html">AuthPayload</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Verifies a users email address by sending a key given by email</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>key</strong>: The key that was sent to the users email</span></span></li><li><span class="tab"><span class="meta">verifyEmail</span>(<span class="meta">key</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="authpayload.doc.html">AuthPayload</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a new campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>name</strong>: The name of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>audienceType</strong>: The audience type of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>emailsToNotify</strong>: A list of the emails to notify about changes to </span></span></li><li><span class="tab"><span class="comment line">#   the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>visibleBeforeStartDate</strong>: Should the campaign be visible to </span></span></li><li><span class="tab"><span class="comment line">#   influencers before its start date</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyId</strong>: The id of the company the campaign should belong to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>budget</strong>: The budget for the campaign</span></span></li><li><span class="tab"><span class="meta">campaignCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">audienceType</span>: <a class="support type" href="campaignaudiencetypeenum.doc.html">CampaignAudienceTypeEnum</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">emailsToNotify</span>: [<a class="support type" href="string.doc.html">String</a>!]!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">visibleBeforeStartDate</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">companyId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">budget</span>: <a class="support type" href="currency.doc.html">Currency</a></span></span></li><li><span class="tab">): <a class="support type" href="campaign.doc.html">Campaign</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The last seen version of the campaign to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>audienceType</strong>: The audience type of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>name</strong>: The name of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>emailsToNotify</strong>: A list of the emails to notify about changes to </span></span></li><li><span class="tab"><span class="comment line">#   the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>budget</strong>: The budget for the campaign</span></span></li><li><span class="tab"><span class="meta">campaignUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">audienceType</span>: <a class="support type" href="campaignaudiencetypeenum.doc.html">CampaignAudienceTypeEnum</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">emailsToNotify</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">budget</span>: <a class="support type" href="currency.doc.html">Currency</a></span></span></li><li><span class="tab">): <a class="support type" href="campaign.doc.html">Campaign</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Publishes the requested publish draft of a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to publish the requested </span></span></li><li><span class="tab"><span class="comment line">#   draft for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign</span></span></li><li><span class="tab"><span class="meta">campaignPublish</span>(<span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="campaign.doc.html">Campaign</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Requests a campaign draft be published</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to request the publish of a </span></span></li><li><span class="tab"><span class="comment line">#   draft for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version number of the campaign to request </span></span></li><li><span class="tab"><span class="comment line">#   a draft publish for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>draftMetaVersion</strong>: The version number of the campaign draft to </span></span></li><li><span class="tab"><span class="comment line">#   request published</span></span></li><li><span class="tab"><span class="meta">campaignRequestPublish</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">draftMetaVersion</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaign.doc.html">Campaign</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign to delete</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign to delete</span></span></li><li><span class="tab"><span class="meta">campaignDelete</span>(<span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Assigns a success agent to a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to assign a success agent to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the success agent to assign to the campaign</span></span></li><li><span class="tab"><span class="meta">campaignAssignSuccessAgent</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaign.doc.html">Campaign</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Removes a success agent from a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to remove the success agent </span></span></li><li><span class="tab"><span class="comment line">#   from</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign to remove the </span></span></li><li><span class="tab"><span class="comment line">#   success agent from</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the success agent to remove from the campaign</span></span></li><li><span class="tab"><span class="meta">campaignRemoveSuccessAgent</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaign.doc.html">Campaign</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Activates a campaign that was pending manual release or reaching startDate</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to activate</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign to activate</span></span></li><li><span class="tab"><span class="meta">campaignActivatePendingCampaign</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaigndraftmeta.doc.html">CampaignDraftMeta</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Closes the campaign for further submissions</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to close</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign to close</span></span></li><li><span class="tab"><span class="meta">campaignClose</span>(<span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="campaigndraftmeta.doc.html">CampaignDraftMeta</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates the weight of a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version number of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>weight</strong>: The new weight of the campaign</span></span></li><li><span class="tab"><span class="meta">campaignUpdateWeight</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">weight</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaign.doc.html">Campaign</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Duplicates a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to duplicate</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign</span></span></li><li><span class="tab"><span class="meta">campaignDuplicate</span>(<span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="campaign.doc.html">Campaign</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Adds a selected influencer to a campaign draft</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignDraftId</strong>: The id of the campaign draft to add the </span></span></li><li><span class="tab"><span class="comment line">#   selected user to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignDraftVersion</strong>: The version of the campaign draft</span></span></li><li><span class="tab"><span class="comment line">#   <strong>selectedInfluencerId</strong>: The id of the selected influencer to add</span></span></li><li><span class="tab"><span class="meta">campaignDraftAddSelectedInfluencer</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignDraftId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignDraftVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">selectedInfluencerId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaigndraft.doc.html">CampaignDraft</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Removes a selected influencer to a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignDraftId</strong>: The id of the campaign draft to remove the </span></span></li><li><span class="tab"><span class="comment line">#   selected influencer from</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignDraftVersion</strong>: The version number of the campaign draft</span></span></li><li><span class="tab"><span class="comment line">#   <strong>selectedInfluencerId</strong>: Selected influencer id</span></span></li><li><span class="tab"><span class="meta">campaignDraftRemoveSelectedInfluencer</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignDraftId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignDraftVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">selectedInfluencerId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaigndraft.doc.html">CampaignDraft</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates a campaign draft</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignDraftId</strong>: The id of the campaign draft to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign draft</span></span></li><li><span class="tab"><span class="comment line">#   <strong>defaultCaption</strong>: The default caption of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>defaultHashtags</strong>: The default hashtags of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>defaultAccountTags</strong>: The default account-tags of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>description</strong>: The description of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>genders</strong>: The list of genders the campaign targets</span></span></li><li><span class="tab"><span class="comment line">#   <strong>endDate</strong>: The end date of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate</strong>: The start date of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>inspirationImages</strong>: The list of inspiration images for the </span></span></li><li><span class="tab"><span class="comment line">#   campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>interests</strong>: The target interests of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>maximumAge</strong>: The maximum age for influencers to target for the </span></span></li><li><span class="tab"><span class="comment line">#   campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>minimumAge</strong>: The minimum age for influencers to target for the </span></span></li><li><span class="tab"><span class="comment line">#   campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>objectives</strong>: A list of the objectives of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>postIntervalEnd</strong>: The start of the period where all submissions </span></span></li><li><span class="tab"><span class="comment line">#   should be posted to SoMe</span></span></li><li><span class="tab"><span class="comment line">#   <strong>postIntervalStart</strong>: The end of the period where all submissions </span></span></li><li><span class="tab"><span class="comment line">#   should be posted to SoMe</span></span></li><li><span class="tab"><span class="comment line">#   <strong>postMedia</strong>: The types of SoMe posts the campaign accepts</span></span></li><li><span class="tab"><span class="comment line">#   <strong>title</strong>: The title of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>subtitle</strong>: The sub-title of the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>watermarks</strong>: The list of watermarks to use on the submissions </span></span></li><li><span class="tab"><span class="comment line">#   for the campaign</span></span></li><li><span class="tab"><span class="comment line">#   <strong>visibleBeforeStartDate</strong>: Should the campaign be visible to </span></span></li><li><span class="tab"><span class="comment line">#   influencers before it starts?</span></span></li><li><span class="tab"><span class="comment line">#   <strong>locationId</strong>: The center of the campaigns target area expressed </span></span></li><li><span class="tab"><span class="comment line">#   as a google place id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>radiusInMeters</strong>: The radius from the center of the campaign </span></span></li><li><span class="tab"><span class="comment line">#   within which the campaign is visible to influencers</span></span></li><li><span class="tab"><span class="comment line">#   <strong>isGlobal</strong>: Whether or not the campaign should be globally </span></span></li><li><span class="tab"><span class="comment line">#   available</span></span></li><li><span class="tab"><span class="meta">campaignDraftUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignDraftId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">defaultCaption</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">defaultHashtags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">defaultAccountTags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">genders</span>: [<a class="support type" href="genderenums.doc.html">GenderEnums</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">endDate</span>: <a class="support type" href="date.doc.html">date</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate</span>: <a class="support type" href="date.doc.html">date</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">inspirationImages</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">interests</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">maximumAge</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">minimumAge</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">objectives</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">postIntervalEnd</span>: <a class="support type" href="date.doc.html">date</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">postIntervalStart</span>: <a class="support type" href="date.doc.html">date</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">postMedia</span>: [<a class="support type" href="postmediatype.doc.html">PostMediaType</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">subtitle</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">watermarks</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">visibleBeforeStartDate</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">locationId</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">radiusInMeters</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">isGlobal</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): <a class="support type" href="campaigndraft.doc.html">CampaignDraft</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a comment on a campaign draft, optionally linked to a specific step of </span></span></li><li><span class="tab"><span class="comment line">#   the campaign draft creation process</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>text</strong>: The text contents of the comment</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignCommentSubject</strong>: The campaign creation step the comment </span></span></li><li><span class="tab"><span class="comment line">#   is related to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignDraftMetaId</strong>: The campaign draft meta the comment is </span></span></li><li><span class="tab"><span class="comment line">#   related to</span></span></li><li><span class="tab"><span class="meta">campaignDraftCommentCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">text</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignCommentSubject</span>: <a class="support type" href="campaigncommentsubject.doc.html">CampaignCommentSubject</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignDraftMetaId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaigndraftcomment.doc.html">CampaignDraftComment</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes a campaign draft comment</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>commentId</strong>: The id of the comment to delete</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the comment</span></span></li><li><span class="tab"><span class="meta">campaignDraftCommentDelete</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">commentId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates a campaign draft comment</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>commentId</strong>: The id of the comment to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>text</strong>: The new text of the comment</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the comment</span></span></li><li><span class="tab"><span class="meta">campaignDraftCommentUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">commentId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">text</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaigndraftcomment.doc.html">CampaignDraftComment</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Rejects the requested publish draft of a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>draftMetaId</strong>: The id of the campaign draftMeta to reject</span></span></li><li><span class="tab"><span class="comment line">#   <strong>draftMetaVersion</strong>: The version of the campaign draftMeta</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignVersion</strong>: The version of the campaign the draftMeta </span></span></li><li><span class="tab"><span class="comment line">#   belongs to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>actionUrl</strong>: The URL of the related campaign, which the email </span></span></li><li><span class="tab"><span class="comment line">#   will then refer to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>note</strong>: The note with the reason as to why this publish request </span></span></li><li><span class="tab"><span class="comment line">#   has been rejected</span></span></li><li><span class="tab"><span class="meta">campaignRejectPublishRequest</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">draftMetaId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">draftMetaVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">campaignVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">actionUrl</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">note</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): <a class="support type" href="campaigndraftmeta.doc.html">CampaignDraftMeta</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a campaign submission</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to submit to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>caption</strong>: The caption of the submission</span></span></li><li><span class="tab"><span class="comment line">#   <strong>postMediaType</strong>: The post media type of the submission</span></span></li><li><span class="tab"><span class="comment line">#   <strong>imageIds</strong>: A list of the images in the campaign submission</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">caption</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">postMediaType</span>: <a class="support type" href="postmediatype.doc.html">PostMediaType</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">imageIds</span>: [<a class="support type" href="id.doc.html">ID</a>!]</span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmission.doc.html">CampaignSubmission</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes a campaign submission</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission to delete</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign submission to delete</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionDelete</span>(<span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates a campaign submission</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign submission to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>caption</strong>: The caption of the campaign submission</span></span></li><li><span class="tab"><span class="comment line">#   <strong>imageIds</strong>: A list of images that belong to the campaign </span></span></li><li><span class="tab"><span class="comment line">#   submission</span></span></li><li><span class="tab"><span class="comment line">#   <strong>postMediaType</strong>: The post media type of the campaign submission</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">caption</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">imageIds</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">postMediaType</span>: <a class="support type" href="postmediatype.doc.html">PostMediaType</a></span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmission.doc.html">CampaignSubmission</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Changes the status of a campaign submission</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission to change the status of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign submission to change the </span></span></li><li><span class="tab"><span class="comment line">#   status of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: The new status of the campaign submission</span></span></li><li><span class="tab"><span class="comment line">#   <strong>reason</strong>: The reason given for the status change</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionChangeStatus</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="submissionstatusenum.doc.html">SubmissionStatusEnum</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">reason</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmission.doc.html">CampaignSubmission</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Reports a campaign submission as being inappropriate</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission to report as being </span></span></li><li><span class="tab"><span class="comment line">#   inappropriate</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionReportAsInappropriate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Adds an image to a campaign submission proof</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>submissionId</strong>: The id of the campaign submission proof to add </span></span></li><li><span class="tab"><span class="comment line">#   the image to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>submissionVersion</strong>: The version of the campaign submission proof </span></span></li><li><span class="tab"><span class="comment line">#   to add the image to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>imageId</strong>: The id of the image to add</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionProofAddImage</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">submissionId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">submissionVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">imageId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmission.doc.html">CampaignSubmission</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Approves a campaign submission proof</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission proof to change the </span></span></li><li><span class="tab"><span class="comment line">#   status of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign submission proof to change </span></span></li><li><span class="tab"><span class="comment line">#   the status of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>status</strong>: The new status of the submission proof to change the </span></span></li><li><span class="tab"><span class="comment line">#   status of</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionProofChangeStatus</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">status</span>: <a class="support type" href="campaignsubmissionproofstatusenum.doc.html">CampaignSubmissionProofStatusEnum</a>!</span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmissionproof.doc.html">CampaignSubmissionProof</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a campaign submission proof</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>submissionId</strong>: The id of the campaign submission to create a </span></span></li><li><span class="tab"><span class="comment line">#   proof for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>imageIds</strong>: A list of images to add as proofs</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionProofCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">submissionId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">imageIds</span>: [<a class="support type" href="id.doc.html">ID</a>!]</span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmissionproof.doc.html">CampaignSubmissionProof</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes a campaign submission proof</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission proof to delete</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign submission proof to delete</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionProofDelete</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates a campaign submission proof</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the campaign submission proof to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the campaign submission proof to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>comments</strong>: The number of comments on the campaign submission at </span></span></li><li><span class="tab"><span class="comment line">#   the time of review</span></span></li><li><span class="tab"><span class="comment line">#   <strong>followersAtCurrentTime</strong>: The number of followers the author of </span></span></li><li><span class="tab"><span class="comment line">#   the campaign submission had at the time of review</span></span></li><li><span class="tab"><span class="comment line">#   <strong>likes</strong>: The number of likes the submission has at the time of </span></span></li><li><span class="tab"><span class="comment line">#   review</span></span></li><li><span class="tab"><span class="comment line">#   <strong>views</strong>: The number of views the submission has at the time of </span></span></li><li><span class="tab"><span class="comment line">#   review</span></span></li><li><span class="tab"><span class="meta">campaignSubmissionProofUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">comments</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">followersAtCurrentTime</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">likes</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">views</span>: <a class="support type" href="int.doc.html">Int</a></span></span></li><li><span class="tab">): <a class="support type" href="campaignsubmissionproof.doc.html">CampaignSubmissionProof</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Assigns a success agent to a company</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyId</strong>: The id of the company to assign a success agent to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyVersion</strong>: The version of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user to assign as success agent for the </span></span></li><li><span class="tab"><span class="comment line">#   company</span></span></li><li><span class="tab"><span class="meta">companyAssignSuccessAgent</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">companyId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">companyVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="company.doc.html">Company</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a new company</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>name</strong>: The name of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyLogoId</strong>: The id of the companies logo</span></span></li><li><span class="tab"><span class="comment line">#   <strong>url</strong>: The url of the company website</span></span></li><li><span class="tab"><span class="comment line">#   <strong>contactEmail</strong>: The contact email of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>contactPhone</strong>: The contact phone number of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>vat</strong>: The VAT number of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>facebook</strong>: The facebook username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>instagram</strong>: The instagram username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>snapchat</strong>: The snapchat username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>linkedin</strong>: The linkedin username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>currency</strong>: The currency used by the company</span></span></li><li><span class="tab"><span class="meta">companyCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">companyLogoId</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">url</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">contactEmail</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">contactPhone</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">vat</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">facebook</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">instagram</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">snapchat</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">linkedin</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">currency</span>: <a class="support type" href="currencyenum.doc.html">CurrencyEnum</a>!</span></span></li><li><span class="tab">): <a class="support type" href="company.doc.html">Company</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Removes a success agent from a company</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyId</strong>: The id of the company to remove a success agent from</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyVersion</strong>: The version of the company to remove a success </span></span></li><li><span class="tab"><span class="comment line">#   agent from</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the success agent to remove from the company</span></span></li><li><span class="tab"><span class="meta">companyRemoveSuccessAgent</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">companyId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">companyVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></span></li><li><span class="tab">): <a class="support type" href="company.doc.html">Company</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates an company</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the company to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The last seen version of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>name</strong>: The name of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyLogoId</strong>: The id of the companies logo</span></span></li><li><span class="tab"><span class="comment line">#   <strong>url</strong>: The url of the companies website</span></span></li><li><span class="tab"><span class="comment line">#   <strong>contactEmail</strong>: The contact email of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>contactPhone</strong>: The contact phone number of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>vat</strong>: The VAT number of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>facebook</strong>: The facebook username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>instagram</strong>: The instagram username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>snapchat</strong>: The snapchat username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>linkedin</strong>: The linkedin username of the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>currency</strong>: The currency used by the company</span></span></li><li><span class="tab"><span class="meta">companyUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">companyLogoId</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">url</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">contactEmail</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">contactPhone</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">vat</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">facebook</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">instagram</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">snapchat</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">linkedin</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">currency</span>: <a class="support type" href="currencyenum.doc.html">CurrencyEnum</a></span></span></li><li><span class="tab">): <a class="support type" href="company.doc.html">Company</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Invites a given email to be a manager for a given company</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyId</strong>: The id of the company to send the invite for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: The email to invite to the company</span></span></li><li><span class="tab"><span class="comment line">#   <strong>returnAddress</strong>: The web address to return the manager to</span></span></li><li><span class="tab"><span class="meta">companyInviteManager</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">companyId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">returnAddress</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="companymanagerinvite.doc.html">CompanyManagerInvite</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Responds to a company invite</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>inviteId</strong>: The id of the invite to respond to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>key</strong>: The key in the invite to respond to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>accept</strong>: The answer to wether or not to accept the invite</span></span></li><li><span class="tab"><span class="meta">companyInviteAnswer</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">inviteId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">key</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">accept</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Revokes an invite by deleting it</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>inviteId</strong>: The id of the company to send the invite for</span></span></li><li><span class="tab"><span class="meta">companyInviteRevoke</span>(<span class="meta">inviteId</span>: <a class="support type" href="id.doc.html">ID</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Resend a company invite</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>inviteId</strong>: The id of the invite to respond to</span></span></li><li><span class="tab"><span class="comment line">#   <strong>returnAddress</strong>: The web address to return the manager to</span></span></li><li><span class="tab"><span class="meta">companyInviteResend</span>(<span class="meta">inviteId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">returnAddress</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Upload an image</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>base64image</strong>: The base64 encoded string of the image data</span></span></li><li><span class="tab"><span class="meta">uploadImage</span>(<span class="meta">base64image</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="image.doc.html">Image</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   accept a user to be a influencer</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user to accept</span></span></li><li><span class="tab"><span class="comment line">#   <strong>note</strong>: A note for the record</span></span></li><li><span class="tab"><span class="meta">acceptInfluencerApplication</span>(<span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">note</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="user.doc.html">User</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Applies for the user to become an influencer</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>note</strong>: A note for the application</span></span></li><li><span class="tab"><span class="meta">applyAsInfluencer</span>(<span class="meta">note</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="influencerapplication.doc.html">InfluencerApplication</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   accept a user to be a influencer</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>applicantUserId</strong>: The id of the user to reject</span></span></li><li><span class="tab"><span class="comment line">#   <strong>note</strong>: A note for the record</span></span></li><li><span class="tab"><span class="meta">rejectInfluencerApplication</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">applicantUserId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">note</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a new kpi report record which allows others to access kpi data related </span></span></li><li><span class="tab"><span class="comment line">#   to a campaign</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>campaignId</strong>: The id of the campaign to make a report for</span></span></li><li><span class="tab"><span class="meta">kpiReportCreateURL</span>(<span class="meta">campaignId</span>: <a class="support type" href="id.doc.html">ID</a>!): <a class="support type" href="kpireportrecord.doc.html">KPIReportRecord</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Makes the server fetch new currency rates</span></span></li><li><span class="tab"><span class="meta">fetchCurrencyRates</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Verifies the delivery of notifications sent by the server</span></span></li><li><span class="tab"><span class="meta">verifyNotificationDelivery</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a new PostMediaTypeCost</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>postMediaType</strong>: The PostMediaType of this PostMediaTypeCost </span></span></li><li><span class="tab"><span class="comment line">#   entry</span></span></li><li><span class="tab"><span class="comment line">#   <strong>startDate</strong>: The Starting date of this new PostMediaType cost</span></span></li><li><span class="tab"><span class="comment line">#   <strong>cost</strong>: the cost amount</span></span></li><li><span class="tab"><span class="meta">postMediaTypeCostCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">postMediaType</span>: <a class="support type" href="postmediatype.doc.html">PostMediaType</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">startDate</span>: <a class="support type" href="date.doc.html">date</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">cost</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="postmediatypecost.doc.html">PostMediaTypeCost</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Registers a notification token, allowing the transfer of push notifications</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>token</strong>: The push notification token to register</span></span></li><li><span class="tab"><span class="meta">registerNotificationToken</span>(<span class="meta">token</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="pushnotificationtoken.doc.html">PushNotificationToken</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Refreshes the access token of a user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The userId of the user trying to refresh access token </span></span></li><li><span class="tab"><span class="comment line">#   of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>refreshToken</strong>: The refresh token of the user trying to refresh </span></span></li><li><span class="tab"><span class="comment line">#   access token of</span></span></li><li><span class="tab"><span class="meta">refreshAccessToken</span>(<span class="meta">userId</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">refreshToken</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="refreshtokenpayload.doc.html">RefreshTokenPayload</a>! </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>apartment</strong>: The apartment number of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>firstName</strong>: The first name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>lastName</strong>: The last name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>birthday</strong>: The birthday of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>contactEmail</strong>: The contact email of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>facebook</strong>: The facebook username</span></span></li><li><span class="tab"><span class="comment line">#   <strong>gender</strong>: The gender of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>instagram</strong>: The instagram username</span></span></li><li><span class="tab"><span class="comment line">#   <strong>phone</strong>: The phone number of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>placeId</strong>: The apartment number of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>profilePictureId</strong>: The users profile picture id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>snapchat</strong>: The snapchat username</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user to create details for</span></span></li><li><span class="tab"><span class="comment line">#   <strong>interests</strong>: A list of the interests of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>incorrectAddressNote</strong>: A note stating the real address if the </span></span></li><li><span class="tab"><span class="comment line">#   address is not present on google places. The placeId is then a nearby address</span></span></li><li><span class="tab"><span class="meta">userDetailCreate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">apartment</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">firstName</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">lastName</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">birthday</span>: <a class="support type" href="date.doc.html">date</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">contactEmail</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">facebook</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">gender</span>: <a class="support type" href="genderenums.doc.html">GenderEnums</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">instagram</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">phone</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">placeId</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">profilePictureId</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">snapchat</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">interests</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">incorrectAddressNote</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): <a class="support type" href="user.doc.html">User</a>! </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the field</span></span></li><li><span class="tab"><span class="comment line">#   <strong>apartment</strong>: The apartment number of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>firstName</strong>: The first name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>lastName</strong>: The last name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>birthday</strong>: The birthday of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>contactEmail</strong>: The contact email of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>facebook</strong>: The facebook username</span></span></li><li><span class="tab"><span class="comment line">#   <strong>gender</strong>: The gender of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>instagram</strong>: The instagram username</span></span></li><li><span class="tab"><span class="comment line">#   <strong>phone</strong>: The phone number of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>placeId</strong>: The address of the user expressed as a google place id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>profilePictureId</strong>: The users profile picture id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>snapchat</strong>: The snapchat username</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: </span></span></li><li><span class="tab"><span class="comment line">#   <strong>interests</strong>: A list of the interests of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>incorrectAddressNote</strong>: A note stating the real address if the </span></span></li><li><span class="tab"><span class="comment line">#   address is not present on google places. The placeId is then a nearby address</span></span></li><li><span class="tab"><span class="meta">userDetailUpdate</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">apartment</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">firstName</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">lastName</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">birthday</span>: <a class="support type" href="date.doc.html">date</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">contactEmail</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">facebook</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">gender</span>: <a class="support type" href="genderenums.doc.html">GenderEnums</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">instagram</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">phone</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">placeId</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">profilePictureId</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">snapchat</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">interests</span>: [<a class="support type" href="id.doc.html">ID</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">incorrectAddressNote</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): <a class="support type" href="user.doc.html">User</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Subscribe a user to MailChipNewsletter</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user change the subscription of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>subscribeToNewsletter</strong>: The subscription status which the user </span></span></li><li><span class="tab"><span class="comment line">#   should be set to</span></span></li><li><span class="tab"><span class="meta">userSetMailChimpSubscriptionStatus</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">subscribeToNewsletter</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes any identifiable information of a user, and the users credentials and </span></span></li><li><span class="tab"><span class="comment line">#   rights</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user to create details for</span></span></li><li><span class="tab"><span class="meta">userDelete</span>(<span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!): <a class="support type" href="user.doc.html">User</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Transfers a user from v1 to v2</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>instagram</strong>: The instagram username of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: The email of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>phone</strong>: The phone number of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>profilePicture</strong>: A link to the profile picture of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>birthday</strong>: The birthday of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>location</strong>: The google placeId of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>gender</strong>: The gender of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>firstName</strong>: The first name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>lastName</strong>: The last name of the user</span></span></li><li><span class="tab"><span class="comment line">#   <strong>isInfluencer</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">transferUser</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">instagram</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">phone</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">profilePicture</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">birthday</span>: <a class="support type" href="date.doc.html">date</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">location</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">gender</span>: <a class="support type" href="genderenums.doc.html">GenderEnums</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">firstName</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">lastName</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">isInfluencer</span>: <a class="support type" href="boolean.doc.html">Boolean</a>!</span></span></li><li><span class="tab">): <a class="support type" href="user.doc.html">User</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Creates a new user comment</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>subject</strong>: The id of the user the comment is about</span></span></li><li><span class="tab"><span class="comment line">#   <strong>comment</strong>: The comment to create</span></span></li><li><span class="tab"><span class="meta">userCommentCreate</span>(<span class="meta">subject</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="usercomment.doc.html">UserComment</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes a user comment</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>commentId</strong>: The id of the comment to delete</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version number of the comment</span></span></li><li><span class="tab"><span class="meta">userCommentDelete</span>(<span class="meta">commentId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates a user comment</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the comment to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version number of the comment</span></span></li><li><span class="tab"><span class="comment line">#   <strong>text</strong>: The text of the comment</span></span></li><li><span class="tab"><span class="meta">userCommentUpdate</span>(<span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">text</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="usercomment.doc.html">UserComment</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Updates the follower count for one of a given set of userDetails SoMe accounts</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userDetailId</strong>: The id of the userDetail to update a follower </span></span></li><li><span class="tab"><span class="comment line">#   count of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userDetailVersion</strong>: The version number of the userDetail</span></span></li><li><span class="tab"><span class="comment line">#   <strong>followerCount</strong>: The new number of followers</span></span></li><li><span class="tab"><span class="comment line">#   <strong>socialMediaAccount</strong>: The social media account type to update the </span></span></li><li><span class="tab"><span class="comment line">#   follower count of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>proof</strong>: The id of an image serving as proof of the follower </span></span></li><li><span class="tab"><span class="comment line">#   count</span></span></li><li><span class="tab"><span class="meta">userDetailUpdateFollowerCount</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">userDetailId</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userDetailVersion</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">followerCount</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">socialMediaAccount</span>: <a class="support type" href="socialmediatypeenum.doc.html">SocialMediaTypeEnum</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">proof</span>: <a class="support type" href="id.doc.html">ID</a></span></span></li><li><span class="tab">): <a class="support type" href="userdetail.doc.html">UserDetail</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Changes the users external shopify and smileio ids</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the userShopify to update the external id of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The version of the userShopify object to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>smileioId</strong>: The new smileio id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>shopifyId</strong>: The new shopify id</span></span></li><li><span class="tab"><span class="meta">userDetailUpdateShopifyAndSmileioIds</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">smileioId</span>: <a class="support type" href="int.doc.html">Int</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">shopifyId</span>: <a class="support type" href="int.doc.html">Int</a>!</span></span></li><li><span class="tab">): <a class="support type" href="userdetail.doc.html">UserDetail</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Create a user right</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user that should receive the claim</span></span></li><li><span class="tab"><span class="comment line">#   <strong>role</strong>: The role the user should receive</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyId</strong>: The id of the company</span></span></li><li><span class="tab"><span class="meta">userRightCreate</span>(<span class="meta">userId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">role</span>: <a class="support type" href="userrole.doc.html">UserRole</a>!, <span class="meta">companyId</span>: <a class="support type" href="id.doc.html">ID</a>): <a class="support type" href="userright.doc.html">UserRight</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Update user rights</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the claim to update</span></span></li><li><span class="tab"><span class="comment line">#   <strong>version</strong>: The last seen version of the claim</span></span></li><li><span class="tab"><span class="comment line">#   <strong>role</strong>: The role</span></span></li><li><span class="tab"><span class="meta">userRightUpdate</span>(<span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">version</span>: <a class="support type" href="int.doc.html">Int</a>!, <span class="meta">role</span>: <a class="support type" href="userrole.doc.html">UserRole</a>!): <a class="support type" href="userright.doc.html">UserRight</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Deletes a user right</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userRightId</strong>: The id of the user right to delete</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userRightVersion</strong>: The version of the user right to delete</span></span></li><li><span class="tab"><span class="meta">userRightDelete</span>(<span class="meta">userRightId</span>: <a class="support type" href="id.doc.html">ID</a>!, <span class="meta">userRightVersion</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Transfers the ownership of a company to an other user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>companyId</strong>: The id of the company to transfer the ownership of</span></span></li><li><span class="tab"><span class="comment line">#   <strong>userId</strong>: The id of the user to grant the ownership of the </span></span></li><li><span class="tab"><span class="comment line">#   company</span></span></li><li><span class="tab"><span class="meta">transferCompanyOwnership</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">companyId</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">userId</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Promotes a User by adding the BrandheroEmployee role to their UserRights</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: The email of the user to promote</span></span></li><li><span class="tab"><span class="meta">userRightPromoteUserToBrandheroEmployee</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <div class="require-by anyone">This element is not required by anyone</div>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
